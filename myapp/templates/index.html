@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index filen</title>
+    <title>Flask React Tutorial</title>
+<script src="https://unpkg.com/react@15/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+
+
+
 </head>
 <body>
-test index
+     <div id="mount-point">funkar ej</div>
 </body>
+
+  <script type="text/jsx">
+     /*** @jsx React.DOM */
+    var FirstComponent = React.createClass({
+        render: function() {
+            return (<p1>Hello world.</p1>);
+        }
+    });
+    React.render(<FirstComponent />, document.getElementById('mount-point') );
+     </script>
+
 </html>
